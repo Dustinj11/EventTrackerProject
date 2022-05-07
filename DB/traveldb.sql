@@ -43,6 +43,14 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 START TRANSACTION;
 USE `traveldb`;
 INSERT INTO `location` (`id`, `name`) VALUES (1, 'Germany');
+INSERT INTO `location` (`id`, `name`) VALUES (2, 'Italy');
+INSERT INTO `location` (`id`, `name`) VALUES (3, 'Croatia');
+INSERT INTO `location` (`id`, `name`) VALUES (4, 'Turkey');
+INSERT INTO `location` (`id`, `name`) VALUES (5, 'Greece');
+INSERT INTO `location` (`id`, `name`) VALUES (6, 'Belgium');
+INSERT INTO `location` (`id`, `name`) VALUES (7, 'Netherlands');
+INSERT INTO `location` (`id`, `name`) VALUES (8, 'Afghanistan');
+INSERT INTO `location` (`id`, `name`) VALUES (9, NULL);
 
 COMMIT;
 
