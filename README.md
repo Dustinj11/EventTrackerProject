@@ -13,8 +13,8 @@ Java, REST, JPA, and Postman
 This weekend was mothers day weekend so it was a quick and painless project that only took a few hours to complete. I was able to complete the project and have time to enjoy Mothers Day with my wife and kids. I am excited to expand on this project and idea over the next couple weekends.
 
 # Postman Test
-List<Location> | GET api/index
-Location by Id | GET api/index/{id}
-Create Location | POST api/index
-Update Location | PUT api/index/{id}
-Delete Location | DELETE api/index/{id}
+`List<Location> | GET api/index`
+`Location by Id | GET api/index/{id}`
+`Create Location | POST api/index`
+`Update Location | PUT api/index/{id}`
+`Delete Location | DELETE api/index/{id}`
