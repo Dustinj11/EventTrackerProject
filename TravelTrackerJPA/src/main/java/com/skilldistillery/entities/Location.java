@@ -14,7 +14,7 @@ public class Location {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	String name; 
+	String name;
 
 	public Location() {
 		super();
