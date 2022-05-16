@@ -18,3 +18,8 @@ This weekend was mothers day weekend so it was a quick and painless project that
 `Create Location | POST api/index`
 `Update Location | PUT api/index/{id}`
 `Delete Location | DELETE api/index/{id}`
+
+#Updated with JS frontend
+This update consisted of mostly JavaScript to build a front end to this program. JavaScript was difficult to wrap my head around at the start of the project. I was having difficulty understanding how everything was communicating with each other. Once I got to a the Update and Delete functions of this program I no longer had set in examples to use. I had to use my classmates and google in order to find answers. Julian broke down how the JavaScript was working line by line for me and it gave me a better understanding of how it was working. Once I understood what was happening it became a lot easier to configure my program.
+
+One of the biggest issues I ran into was my List All Locations, and my update by Id. the List all locations was populating in the console but not in my HTML file. I could not figure it out until I walked myself through it all and noticed I have 2 locationDiv's that were contradicting themselves in my code. I deleted one of them and the program worked flawlessly. The update by Id was also giving me issues until I noticed a missing "/" at the end of my api. this was causing the id to be attached to the end of my index.
