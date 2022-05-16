@@ -1,0 +1,58 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Locations traveled</title>
+<script type="text/javascript" src="js/eventFunctions.js"></script>
+</head>
+<body>
+<h1>Locations Visited Tracker</h1>
+<hr>
+
+<div>
+<form name = "locationForm">
+<input type="number" name ="locationId">
+<button name="lookup">Get Location by Id</button>
+</form><br>
+</div>
+	
+<div>
+    <form name="addLocationForm">
+    <input type ="text" name="name" placeholder="Location Name">
+    <button name="addLocation">Add Location</button>
+
+    </form>
+</div>
+
+<div>
+<form name="allLocationForm">
+		<button name="listAll">List All Locations</button>
+	</form><br>
+</div>
+
+<div>
+<form name="numberOfLocations">
+		<button name="calculateLocations">how many locations visited?</button>
+	</form><br>
+</div>
+<div id ="locations"></div>
+
+<div>
+<form name = "updateLocationForm">
+<input type="number" name ="locationId" placeholder="Locaiton Id">
+<input type= "text" name = "name" placeholder="Updated Location">
+<button name="submit">Update</button>
+</form><br>
+</div>
+
+<div>
+<form name = "deleteLocationForm">
+<input type="number" name ="locationId" placeholder="Locaiton Id">
+<button name="submit">DELETE</button>
+</form><br>
+</div>
+
+
+<div id="locationData"></div>
+
+</body>
+</html>

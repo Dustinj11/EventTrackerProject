@@ -28,7 +28,7 @@ public class LocationController {
 	
 	@GetMapping("index")
 	public List<Location> index() {
-		return loc.index();
+		return loc.getAllLocations();
 	}
 	
 	@PostMapping("index")
@@ -85,13 +85,13 @@ public class LocationController {
 	public void deleteLocation(@PathVariable Integer id,
 			HttpServletResponse res
 			) {
-			try {
-				loc.deleteLocation(id);
-				res.setStatus(204);
-			} catch (Exception e) {
-				System.err.println(e);
-				res.setStatus(400);
-			}
+		try {
+			loc.deleteLocation(id);
+			res.setStatus(200);
+		} catch (Exception e) {
+			System.err.println(e);
+			res.setStatus(400);
+		}
 	
 	}
 }

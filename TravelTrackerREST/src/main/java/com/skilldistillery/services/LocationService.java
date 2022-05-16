@@ -6,7 +6,7 @@ import java.util.Optional;
 import com.skilldistillery.entities.Location;
 
 public interface LocationService {
-List<Location> index();
+List<Location> getAllLocations();
 Location addLocation (Location location);
 void deleteLocation (int id);
 Location updateLocation(int locationId, Location location);
