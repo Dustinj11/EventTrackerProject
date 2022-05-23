@@ -1,0 +1,46 @@
+<h1>Locations traveled tracker</h1><br>
+<h2>Number of locations traveled: {{locations.length}}</h2><br>
+
+<h3>Add a location</h3>
+<form class="text-center" *ngIf="!selected">
+  <input type="text" name="name" [(ngModel)]="newLocation.name" class="form-control">
+  <input type="submit" name="submit" value="Add Location" (click)="addLocation(newLocation)">
+</form>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <td>ID</td>
+      <td>NAME</td>
+      <td>EDIT/DELETE</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let location of locations">
+      <td>{{location.id}}</td>
+      <td>{{location.name}}</td>
+      <button type="button" class="btn btn-outline-primary" (click)="setEditLocation(location)">Edit</button>
+      <button type="button" class="btn btn-outline-danger" (click)="removeLocation(location.id)">Delete</button>
+    </tr>
+  </tbody>
+</table>
+
+<form *ngIf="editLocation">
+  <label for="name">Location name:</label>
+  <input type="text" name ="name" [(ngModel)]="editLocation.name">
+ <button (click)="updateLocation(editLocation)">Submit</button>
+</form>
+
+
+
+
+<!-- <h3>List of locations</h3>
+<table *ngFor="let location of locations">
+  <td>{{location.id}} -</td>
+  <td>{{location.name}}</td>
+</table> -->
+
+
+
+
+
