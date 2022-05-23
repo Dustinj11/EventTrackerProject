@@ -58,6 +58,7 @@ INSERT INTO `location` (`id`, `name`, `country`, `state`, `city`, `notes`) VALUE
 INSERT INTO `location` (`id`, `name`, `country`, `state`, `city`, `notes`) VALUES (10, 'Colorado', NULL, NULL, NULL, NULL);
 INSERT INTO `location` (`id`, `name`, `country`, `state`, `city`, `notes`) VALUES (11, 'Arizona', NULL, NULL, NULL, NULL);
 INSERT INTO `location` (`id`, `name`, `country`, `state`, `city`, `notes`) VALUES (12, 'Florida', NULL, NULL, NULL, NULL);
+INSERT INTO `location` (`id`, `name`, `country`, `state`, `city`, `notes`) VALUES (13, 'Utah', NULL, NULL, NULL, NULL);
 
 COMMIT;
 
